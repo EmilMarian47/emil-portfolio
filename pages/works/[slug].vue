@@ -61,6 +61,7 @@
 
 
 <script setup>
+const supabase = useSupabaseClient()
 const route = useRoute();
 const slug = route.params.slug;
 const userCookie = useCookie('user_id');
