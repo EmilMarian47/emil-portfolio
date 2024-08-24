@@ -55,12 +55,22 @@
 
 <style>
   article img {
-    width: 100%;
+    @apply w-full
+  }
+
+  .Toastify__toast {
+    @apply border border-[#bcbcbc] rounded-none
+  }
+
+  .Toastify__progress-bar {
+    @apply hidden
   }
 </style>
 
 
 <script setup>
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
 const supabase = useSupabaseClient()
 const route = useRoute();
 const slug = route.params.slug;
@@ -109,6 +119,11 @@ const handleVote = async (voteType) => {
 
   if (existingVote && existingVote.length > 0) {
     console.log('User has already voted.');
+    toast("Already voted!", {
+      "theme": "auto",
+      "type": "warning",
+      "dangerouslyHTMLString": true
+    })
     return;
   }
 
