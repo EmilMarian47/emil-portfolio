@@ -91,11 +91,6 @@ const fetchVotes = async () => {
     .select('vote_type')
     .eq('work_id', slug);
 
-  if (error) {
-    console.error('Error fetching votes:', error);
-    return;
-  }
-
   // Compute vote counts
   upvotes.value = votes.filter(vote => vote.vote_type === 'upvote').length;
   downvotes.value = votes.filter(vote => vote.vote_type === 'downvote').length;
@@ -112,13 +107,7 @@ const handleVote = async (voteType) => {
     .eq('work_id', slug)    // Match the work_id condition
     .limit(1);              // Limit the query to one row
 
-  if (fetchError) {
-    console.error('Error checking existing vote:', JSON.stringify(fetchError, null, 2));
-    return;
-  }
-
   if (existingVote && existingVote.length > 0) {
-    console.log('User has already voted.');
     toast("Already voted!", {
       "theme": "auto",
       "type": "warning",
@@ -133,7 +122,7 @@ const handleVote = async (voteType) => {
     .insert({ user_id: userId, work_id: slug, vote_type: voteType });
 
   if (insertError) {
-    console.error('Error inserting vote:', insertError);
+    // console.error('Error inserting vote:', insertError);
     return;
   }
 
