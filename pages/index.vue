@@ -1,6 +1,6 @@
 <template>
     <div class="container py-16">
-        <h1 class="font-sans text-2xl leading-8 mb-6">Passionate UI/UX Designer with 3 years of industry experience</h1>
+        <h1 class="font-sans text-2xl leading-8 mb-6">UI/UX Designer with 3 years of industry experience</h1>
 
         <div class="font-mono text-base mb-10">
             <p>
