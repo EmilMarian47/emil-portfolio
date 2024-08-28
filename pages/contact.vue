@@ -7,6 +7,12 @@
                 <p class="font-mono">Phone</p>
                 <a class="text-xl font-semibold text-[#A000AE]" href="tel:+918547956056">+91 8547956056</a>
             </div>
+            
+                <div class="flex flex-col gap-1">
+                    <p class="font-mono">LinkedIn</p>
+                    <a class="text-xl font-semibold text-[#A000AE]" href="https://www.linkedin.com/in/emil-marian/">linkedin.com/in/emil-marian/</a>
+                </div>
+            
             <div class="">
                 <p class="font-mono">Email</p>
                 <a class="text-xl font-semibold text-[#A000AE]" href="mailto:emil.marian.info@gmail.com">emil.marian.info@gmail.com</a>
