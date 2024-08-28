@@ -18,7 +18,9 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'IBM Plex Mono': true,
-      'Space Grotesk': true
+      'Space Grotesk': true,
+      'Press Start 2P': true,
+      'VT323': true
     }
   },
   supabase: {
