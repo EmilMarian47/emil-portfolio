@@ -111,7 +111,8 @@ const handleVote = async (voteType) => {
     toast("Already voted!", {
       "theme": "auto",
       "type": "warning",
-      "dangerouslyHTMLString": true
+      "dangerouslyHTMLString": true,
+      "limit": 1,
     })
     return;
   }

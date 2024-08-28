@@ -21,7 +21,6 @@
     "vue3-toastify": "^0.2.2"
   },
   "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "nuxt3-notifications": "^1.2.2"
+    "@nuxtjs/google-fonts": "^3.2.0"
   }
 }

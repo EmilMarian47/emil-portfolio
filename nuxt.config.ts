@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/supabase",
     "@nuxt/image",
-    "nuxt3-notifications"
   ],
   googleFonts: {
     families: {
@@ -26,6 +25,5 @@ export default defineNuxtConfig({
     url: process.env.SUPABASE_URL,
     key: process.env.SUPABASE_KEY,
     redirect: false,
-  },
-  nuxtNotifications: {}
+  }
 })
