@@ -1,10 +1,7 @@
 export default {
   theme: {
     fontFamily: {
-      sans: ["Space Grotesk"],
-      mono: ["IBM Plex Mono"],
-      bit: ["Press Start 2P"],
-      dot: ["VT323"],
+      sans: ["IBM Plex Mono"],
     },
     container: {
       center: true,
