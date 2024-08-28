@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-16">
+    <div class="container py-8">
         <h1 class="font-sans text-2xl leading-8 mb-6">Hello there! 👋</h1>
 
         <div class="font-mono text-base mb-10">

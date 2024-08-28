@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-16">
+  <div class="container py-8">
     <h1 class="font-sans text-2xl leading-8 mb-10">Works including Lorem ipsum dolor sit</h1>
 
     <ContentList path="/works" v-slot="{ list }">
