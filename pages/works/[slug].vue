@@ -3,7 +3,7 @@
     <ContentDoc v-slot="{ doc }">
       <div class="content pb-16 border-b border-[#000000]">
         <div class="text-[#00000080] text-sm font-mono mb-6">
-          {{ doc._path }}
+          <nuxt-link to="/works">{{ doc._path }}</nuxt-link>
         </div>
 
         <div class="flex gap-3 items-center mb-9">
