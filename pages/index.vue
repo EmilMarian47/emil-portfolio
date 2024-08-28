@@ -16,6 +16,6 @@
             </p>
         </div>
 
-        <a href="#" class="text-lg text-[#A000AE] underline underline-offset-4">Download Resume</a>
+        <a href="/resume.pdf" class="text-lg text-[#A000AE] underline underline-offset-4">Download Resume</a>
     </div>
 </template>
