@@ -17,10 +17,10 @@
 
         <!-- Upvote/Downvote -->
         <div class="flex justify-between items-center font-mono">
-          <button @click="handleVote('upvote')" class="text-green-500 flex">
+          <button @click="handleVote('upvote')" class="text-green-500 underline flex">
             Upvote (<span>{{ upvotes }}</span>)
           </button>
-          <button @click="handleVote('downvote')" class="text-red-500 flex">
+          <button @click="handleVote('downvote')" class="text-red-500 underline flex">
             Downvote (<span>{{ downvotes }}</span>)
           </button>
         </div>
