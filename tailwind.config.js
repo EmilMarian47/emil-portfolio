@@ -3,6 +3,8 @@ export default {
     fontFamily: {
       sans: ["Space Grotesk"],
       mono: ["IBM Plex Mono"],
+      bit: ["Press Start 2P"],
+      dot: ["VT323"],
     },
     container: {
       center: true,
