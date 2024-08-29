@@ -3,7 +3,7 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'background': '#f5f5f5',
+      'background': '#ffffff',
       'primary': '#111111', // text
       'secondary': '#A000AE', // pink
       'tertiary': '#00000080', // inactive
