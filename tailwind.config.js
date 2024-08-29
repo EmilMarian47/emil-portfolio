@@ -3,8 +3,8 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'background': '#ffffff',
-      'primary': '#000', // text
+      'background': '#f5f5f5',
+      'primary': '#111111', // text
       'secondary': '#A000AE', // pink
       'tertiary': '#00000080', // inactive
       'success': 'rgb(34 197 94)', // upvote
