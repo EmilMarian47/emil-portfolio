@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-const isFallbackVisible = ref(true);
+const isFallbackVisible = ref(false);
 const videoRef = ref(null);
 
 const showFallback = () => {
