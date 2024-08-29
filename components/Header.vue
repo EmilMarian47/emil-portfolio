@@ -10,7 +10,7 @@
         />
         <video
           ref="videoRef"
-          src="https://media.giphy.com/media/klIaoXlnH9TMY/giphy.mp4"
+          src="/assets/FPV.mp4"
           muted
           autoplay
           loop
