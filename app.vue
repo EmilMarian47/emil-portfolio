@@ -1,5 +1,5 @@
 <template>
-<div class="min-h-screen flex flex-col justify-between">
+<div class="min-h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center bg-[url('')]">
   <div>
     <Header />
     <NuxtPage />
@@ -7,3 +7,9 @@
   <Footer />
 </div>
 </template>
+
+<style>
+body {
+  @apply bg-background text-primary;
+}
+</style>

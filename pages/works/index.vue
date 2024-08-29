@@ -8,7 +8,7 @@
         <div class="flex size-36 bg-[#D9D9D9]"></div>
         <div class="pt-5 flex gap-1 flex-col">
           <h5 class="font-mono text-black underline">{{ work.title }}</h5>
-          <p class="font-mono italic text-[#787878]">{{ work.type }}</p>
+          <p class="font-mono italic text-tertiary">{{ work.type }}</p>
         </div>
       </nuxt-link>
       </div>

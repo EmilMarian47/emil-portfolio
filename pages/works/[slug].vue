@@ -1,9 +1,11 @@
 <template>
   <div class="container py-8">
     <ContentDoc v-slot="{ doc }">
-      <div class="content pb-16 border-b border-[#000000]">
-        <div class="text-[#00000080] text-sm font-mono mb-6">
-          <nuxt-link to="/works">{{ doc._path }}</nuxt-link>
+      <div class="content pb-16 border-b border-primary">
+        <div class="text-tertiary text-sm font-mono mb-6">
+          <span>{{ doc._path.split('/works')[0] }}/</span>
+            <nuxt-link class="underline" to="/works">works</nuxt-link>
+          <span>{{ doc._path.split('/works')[1] }}</span>
         </div>
 
         <div class="flex gap-3 items-center mb-9">
@@ -17,10 +19,10 @@
 
         <!-- Upvote/Downvote -->
         <div class="flex justify-between items-center font-mono">
-          <button @click="handleVote('upvote')" class="text-green-500 underline flex">
+          <button @click="handleVote('upvote')" class="text-success underline flex">
             Upvote (<span>{{ upvotes }}</span>)
           </button>
-          <button @click="handleVote('downvote')" class="text-red-500 underline flex">
+          <button @click="handleVote('downvote')" class="text-error underline flex">
             Downvote (<span>{{ downvotes }}</span>)
           </button>
         </div>
@@ -30,7 +32,7 @@
       <div class="py-16">
         <div class="flex gap-2 justify-between mb-11">
           <h4 class="text-2xl">More Projects</h4>
-          <NuxtLink to="/works" class="text-lg text-[#A000AE] font-mono underline underline-offset-2">View All
+          <NuxtLink to="/works" class="text-lg text-secondary font-mono underline underline-offset-2">View All
           </NuxtLink>
         </div>
         <ContentList path="/works" v-slot="{ list }">
@@ -40,7 +42,7 @@
                 <div class="flex size-36 bg-[#D9D9D9]"></div>
                 <div class="pt-5 flex gap-1 flex-col">
                   <h5 class="font-mono text-black underline">{{ work.title }}</h5>
-                  <p class="font-mono italic text-[#787878]">{{ work.type }}</p>
+                  <p class="font-mono italic text-tertiary">{{ work.type }}</p>
                 </div>
               </nuxt-link>
             </template>
@@ -59,7 +61,7 @@
   }
 
   .Toastify__toast {
-    @apply border border-[#bcbcbc] rounded-none
+    @apply border border-tertiary rounded-none
   }
 
   .Toastify__progress-bar {
