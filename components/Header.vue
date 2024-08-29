@@ -8,17 +8,13 @@
           class="w-16 h-16 absolute inset-0"
           v-if="isFallbackVisible"
         />
-        <video
+        <img
           ref="videoRef"
-          src="/assets/FPV.mp4"
-          muted
-          autoplay
-          loop
-          playsinline
+          src="/assets/giphy.gif"
           class="w-16 h-16 object-cover rounded-full"
           @error="showFallback"
           @loadeddata="hideFallback"
-        ></video>
+        ></img>
       </nuxt-link>
 
       <nuxt-link to="/">
