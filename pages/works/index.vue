@@ -1,6 +1,6 @@
 <template>
   <div class="container py-8">
-    <h1 class="font-sans text-2xl leading-8 mb-10">Works including Lorem ipsum dolor sit</h1>
+    <h1 class="font-sans text-base leading-8 mb-10">Works including Lorem ipsum dolor sit</h1>
 
     <ContentList path="/works" v-slot="{ list }">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">

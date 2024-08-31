@@ -2,7 +2,7 @@
   <div class="container py-8">
     <ContentDoc v-slot="{ doc }">
       <div class="content pb-16 border-b border-primary">
-        <div class="text-tertiary text-sm font-mono mb-6">
+        <div class="text-tertiary text-base font-mono mb-6">
           <span>{{ doc._path.split('/works')[0] }}/</span>
             <nuxt-link class="underline" to="/works">works</nuxt-link>
           <span>{{ doc._path.split('/works')[1] }}</span>
@@ -10,7 +10,7 @@
 
         <div class="flex gap-3 items-center mb-9">
           <nuxt-link to="/works"><img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back"></nuxt-link>
-          <h1 class="text-2xl">{{ doc.title }}</h1>
+          <h1 class="text-base">{{ doc.title }}</h1>
         </div>
 
         <article class="mb-8">

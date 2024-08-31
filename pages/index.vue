@@ -1,6 +1,6 @@
 <template>
     <div class="container py-8">
-        <h1 class="font-mono text-2xl leading-8 mb-6">Hello there! 👋</h1>
+        <h1 class="font-mono text-base leading-8 mb-6">Hello there! 👋</h1>
 
         <div class="font-mono text-base mb-10">
             <p>
@@ -16,6 +16,6 @@
             </p>
         </div>
 
-        <a href="/resume.pdf" class="text-lg text-primary underline">Download Resume</a>
+        <a href="/resume.pdf" class="text-base text-primary underline">Download Resume</a>
     </div>
 </template>
