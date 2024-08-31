@@ -10,7 +10,7 @@
             
                 <div class="flex flex-col gap-1">
                     <p class="font-mono">LinkedIn</p>
-                    <a class="text-base font-semibold text-primary underline" href="https://www.linkedin.com/in/emil-marian/">linkedin.com/in/emil-marian/</a>
+                    <a class="text-base text-primary underline" href="https://www.linkedin.com/in/emil-marian/">linkedin.com/in/emil-marian/</a>
                 </div>
             
             <div class="">
