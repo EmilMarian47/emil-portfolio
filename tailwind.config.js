@@ -6,7 +6,7 @@ export default {
       'background': '#111111',
       'primary': '#f5f5f5', // text
       'secondary': '#A000AE', // pink
-      'tertiary': '#f5f5f5', // inactive
+      'tertiary': '#dddddd', // inactive
       'success': 'rgb(34 197 94)', // upvote
       'error': 'rgb(239 68 68)', // downvote
       'gray': '#BCBCBC'// line
