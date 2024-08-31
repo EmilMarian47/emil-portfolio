@@ -31,8 +31,8 @@
 
       <div class="py-16">
         <div class="flex gap-2 justify-between mb-11">
-          <h4 class="text-2xl">More Projects</h4>
-          <NuxtLink to="/works" class="text-lg text-secondary font-mono underline underline-offset-2">View All
+          <h4 class="text-base">More Projects</h4>
+          <NuxtLink to="/works" class="text-base text-primary font-mono underline underline-offset-2">View All
           </NuxtLink>
         </div>
         <ContentList path="/works" v-slot="{ list }">
