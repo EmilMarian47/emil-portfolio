@@ -5,7 +5,7 @@ export default {
       current: 'currentColor',
       'background': '#111111',
       'primary': '#f5f5f5', // text
-      'secondary': '#A000AE', // pink
+      'secondary': '#E414F7', // pink
       'tertiary': '#dddddd', // inactive
       'success': 'rgb(34 197 94)', // upvote
       'error': 'rgb(239 68 68)', // downvote

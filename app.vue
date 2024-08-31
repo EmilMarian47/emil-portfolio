@@ -1,5 +1,5 @@
 <template>
- <div class="min-h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center bg-[url('/assets/bg1.png')]"> 
+ <div class="min-h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center bg-[url('/assets/pixel.png')]"> 
   <div>
     <Header />
     <NuxtPage />
