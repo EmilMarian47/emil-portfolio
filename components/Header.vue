@@ -5,7 +5,7 @@
         <img
           src="../assets/img/logo.png"
           alt="Logo"
-          class="w-16 h-16 absolute inset-0"
+          class="w-14 h-14 absolute inset-0"
           v-if="isFallbackVisible"
         />
         <img
