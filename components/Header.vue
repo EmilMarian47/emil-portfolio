@@ -14,7 +14,7 @@
           class="w-14 h-14 object-cover rounded-full"
           @error="showFallback"
           @loadeddata="hideFallback"
-        ></img>
+        >
       </nuxt-link>
 
       <nuxt-link to="/">
