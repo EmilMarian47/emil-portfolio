@@ -15,7 +15,6 @@
                 sed viverra sed.
             </p>
         </div>
-
-        <a href="/resume.pdf" class="text-base text-primary underline">Download Resume</a>
+        
     </div>
 </template>

@@ -19,7 +19,9 @@
 
       <nuxt-link to="/">
         <h1 class="font-sans text-base">Emil Marian</h1>
-      </nuxt-link>
+      </nuxt-link> 
+      <div class="ml-auto">
+      <a href="/resume.pdf" class="text-base text-primary underline">Download Resume</a> </div>
     </div>
     <div class="flex justify-between gap-2 py-2 border-y border-gray border-dashed">
       <nuxt-link
