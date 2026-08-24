@@ -12,7 +12,7 @@ export default {
       'gray': '#BCBCBC'// line
     },
     fontFamily: {
-      sans: ["IBM Plex Mono"],
+      sans: ["Geist"],
     },
     container: {
       center: true,
