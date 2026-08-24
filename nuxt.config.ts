@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      'IBM Plex Mono': true,
+      'Geist': true,
       
     }
   },
