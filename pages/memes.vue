@@ -19,7 +19,7 @@
     </div>
 
     <p v-else class="mb-10">
-      Add images to the public/memes folder to see them here.
+      Add images to the server/assets/memes folder to see them here.
     </p>
 
     <Teleport to="body">
