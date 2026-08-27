@@ -1,3 +1,12 @@
-# Project Name 1
+---
+title: Simmr
+type: Cooking
+description: meta description of the page
+thumbnail: "SimmrT.png"
+---
 
-![3d-animation-india-flag-realistic-india-flag-waving-wind.jpg](/3d-animation-india-flag-realistic-india-flag-waving-wind.jpg)
+<!-- Content of the page -->
+
+![1](/works/Simmr1.png)
+![1](/works/Simmr3.png)
+![1](/works/Simmr4.png)
