@@ -7,6 +7,14 @@
             <p>Fermentum ut iaculis convallis etiam ultrices lorem. Ac dictum pulvinar faucibus vulputate mattis interdum nunc. Ultrices tincidunt est malesuada mi mauris. Orci mattis pellentesque laoreet in magna tristique. Ac sagittis id cras convallis erat ultrices gravida viverra. Tincidunt leo nunc aliquam etiam sed viverra sed.</p>
             <p>Fermentum ut iaculis convallis etiam ultrices lorem. Ac dictum pulvinar faucibus vulputate mattis interdum nunc. Ultrices tincidunt est malesuada mi mauris. Orci mattis pellentesque laoreet in magna tristique.</p>
         </div>
+
+        <NuxtLink to="/memes">
+          <img
+            src="../assets/img/Apu.jpg"
+            alt="Logo"
+            class="w-14 h-14 object-cover"
+          />
+        </NuxtLink>
     </div>
   </template>
   
