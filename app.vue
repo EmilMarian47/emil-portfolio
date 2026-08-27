@@ -1,10 +1,14 @@
 <template>
-<!-- <div class="min-h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center bg-[url('/assets/pixel.jpeg')]"> -->
-  <div>
+  <div class="min-h-screen flex flex-col">
     <Header />
-    <NuxtPage />
+    
+    <!-- main container expands to fill available height and push footer down -->
+    <main class="flex-grow">
+      <NuxtPage />
+    </main>
+
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-8">
+  <div class="container py-8 flex-grow">
     <ContentDoc v-slot="{ doc }">
       <div class="content pb-16 border-b border-primary">
         <div class="text-tertiary text-base font-mono mb-6">
@@ -56,10 +56,14 @@
 </template>
 
 <style>
-  /* Renders images and videos at 100% natural dimensions while preventing horizontal overflow */
+  /* Edge-to-edge images with 0 margin or gap between consecutive elements */
   article img,
   article video {
-    @apply max-w-full h-auto mx-auto block my-4;
+    @apply h-auto block my-0;
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 </style>
 

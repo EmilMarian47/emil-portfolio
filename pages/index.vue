@@ -1,8 +1,8 @@
 <template>
     <div class="container py-8">
-        <h1 class="font-sans text-sm font-normal leading-6 mb-6">Hello there! 👋</h1>
+        <h1 class="font-sans text-base font-normal leading-6 mb-6">Hello there! 👋</h1>
 
-        <div class="font-sans text-sm font-normal leading-6 mb-10">
+        <div class="font-sans text-base font-normal leading-6 mb-10">
             <p>
                 I'm a UI/UX Designer with 2.8 years of industry experience. Lorem ipsum dolor sit amet consectetur. 
                 Amet justo et ut sed viverra in at. In amet lectus semper rhoncus. Duis pretium dui commodo 
