@@ -12,7 +12,7 @@ export default {
       'gray': '#BCBCBC'// line
     },
     fontFamily: {
-      sans: ["Geist"],
+      mono: ["Space Mono"],
     },
     container: {
       center: true,

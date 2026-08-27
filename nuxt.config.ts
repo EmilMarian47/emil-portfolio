@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      'Geist': true,
+      'Space Mono': true,
       
     }
   },

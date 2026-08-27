@@ -18,14 +18,15 @@
       </nuxt-link>
 
       <nuxt-link to="/">
-        <h1 class="font-sans text-base">Emil Marian</h1>
+        <h1 class="font-mono text-base">Emil Marian</h1>
       </nuxt-link> 
       <div class="ml-auto">
-      <a href="/resume.pdf" class="text-base text-primary underline">Download Resume</a> </div>
+        <a href="/resume.pdf" class="font-mono text-base text-base underline">Download Resume</a>
+      </div>
     </div>
     <div class="flex justify-between gap-2 py-2 border-y border-gray border-dashed">
       <nuxt-link
-        class="font-medium underline"
+        class="font-mono font-medium underline"
         :class="{
           'text-tertiary': $route.path !== '/',
           'text-secondary': $route.path === '/',
@@ -34,7 +35,7 @@
         >About</nuxt-link
       >
       <nuxt-link
-        class="font-medium underline"
+        class="font-mono font-medium underline"
         :class="{
           'text-tertiary': !$route.path.startsWith('/works'),
           'text-secondary': $route.path.startsWith('/works'),
@@ -43,7 +44,7 @@
         >Works</nuxt-link
       >
       <nuxt-link
-        class="font-medium underline"
+        class="font-mono font-medium underline"
         :class="{
           'text-tertiary': $route.path !== '/contact',
           'text-secondary': $route.path === '/contact',

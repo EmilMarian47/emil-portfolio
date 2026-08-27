@@ -1,6 +1,6 @@
 <template>
   <div class="container py-8">
-      <h1 class="font-sans text-sm font-normal leading-6 mb-10">Terms of use</h1>
+      <h1 class="font-mono text-base font-normal leading-6 mb-10">Terms of use</h1>
 
       <div class="mb-10 flex flex-col gap-6">
           <p>Lorem ipsum dolor sit amet consectetur. Amet justo et ut sed viverra in at. In amet lectus semper rhoncus. Duis pretium dui commodo non eu et ac dolor proin. Blandit nunc id nascetur lacus dolor.</p>
