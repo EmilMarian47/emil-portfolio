@@ -12,7 +12,7 @@
           <nuxt-link to="/works">
             <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
           </nuxt-link>
-          <h1 class="text-base">{{ doc.title }}</h1>
+          <h1 class="text-base font-mono">{{ doc.title }}</h1>
         </div>
 
         <article class="mb-8">
@@ -22,7 +22,7 @@
 
       <div class="py-16">
         <div class="flex gap-2 justify-between mb-11">
-          <h4 class="text-base">More Projects</h4>
+          <h4 class="text-base font-mono">More Projects</h4>
           <NuxtLink to="/works" class="text-base text-primary font-mono underline underline-offset-2">
             View All
           </NuxtLink>
