@@ -7,10 +7,10 @@ thumbnail: "MacallineT.png"
 
 <!-- Content of the page -->
 
-![1](/works/Macalline1.png)
-![1](/works/Macalline2.png)
-![1](/works/Macalline3.png)
-![1](/works/Macalline4.png)
-![1](/works/Macalline5.png)
-![1](/works/Macalline6.png)
+![1](/works/Macalline/Macalline1.png)
+![1](/works/Macalline/Macalline2.png)
+![1](/works/Macalline/Macalline3.png)
+![1](/works/Macalline/Macalline4.png)
+![1](/works/Macalline/Macalline5.png)
+![1](/works/Macalline/Macalline6.png)
 

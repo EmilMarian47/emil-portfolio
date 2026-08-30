@@ -11,11 +11,24 @@
         </div>
 
         <!-- Header -->
-        <div class="flex gap-3 items-center mb-9">
-          <nuxt-link to="/works">
-            <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
-          </nuxt-link>
-          <h1 class="text-base font-mono">{{ doc.title }}</h1>
+        <div class="flex justify-between items-center mb-9">
+          <div class="flex gap-3 items-center">
+            <nuxt-link to="/works">
+              <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
+            </nuxt-link>
+            <h1 class="text-base font-mono">{{ doc.title }}</h1>
+          </div>
+
+          <!-- Go to website Hyperlink (Renders if website/url/link frontmatter exists) -->
+          <a
+            v-if="getWebsiteUrl(doc)"
+            :href="getWebsiteUrl(doc)"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-base font-mono text-primary underline underline-offset-2 flex items-center gap-1 hover:opacity-80 transition-opacity"
+          >
+            Go to website
+          </a>
         </div>
 
         <!-- Full-Viewport iFrame (Shows if frontmatter iframe/figma/embed exists) -->
@@ -28,9 +41,9 @@
           ></iframe>
         </div>
 
-        <!-- Markdown Article Body (Only renders if doc.body contains elements) -->
+        <!-- Markdown Article Body (With automatically transformed relative asset paths) -->
         <article v-if="hasBodyContent(doc)" class="mb-8">
-          <ContentRenderer :value="doc" />
+          <ContentRenderer :value="transformBodyAssets(doc)" />
         </article>
       </div>
 
@@ -102,6 +115,16 @@
 </style>
 
 <script setup>
+// Extract website URL from frontmatter
+const getWebsiteUrl = (doc) => {
+  return doc?.website || doc?.url || doc?.link || doc?.site || null;
+};
+
+// Extract project slug from document path (e.g. "/works/marker" -> "marker")
+const getProjectSlug = (doc) => {
+  return doc?._path ? doc._path.split('/').pop() : '';
+};
+
 // Check if document has actual body content
 const hasBodyContent = (doc) => {
   return doc?.body?.children && doc.body.children.length > 0;
@@ -113,7 +136,7 @@ const isVideo = (path) => {
   return /\.(mp4|webm|ogg|mov)$/i.test(path);
 };
 
-// Resolve thumbnail paths
+// Resolve thumbnail paths: /works/<slug>/<filename>
 const getThumbnail = (work) => {
   const imgPath = work.thumbnail || work.cover || work.image;
   if (!imgPath) return null;
@@ -121,7 +144,43 @@ const getThumbnail = (work) => {
   if (imgPath.startsWith('/') || imgPath.startsWith('http')) {
     return imgPath;
   }
-  return `/works/${imgPath}`;
+
+  const slug = getProjectSlug(work);
+  return slug ? `/works/${slug}/${imgPath}` : `/works/${imgPath}`;
+};
+
+// Automatically prepends /works/<slug>/ to relative images inside the Markdown body AST
+const transformBodyAssets = (doc) => {
+  if (!doc?.body) return doc;
+  
+  const slug = getProjectSlug(doc);
+  if (!slug) return doc;
+
+  // Clone document object to prevent unintended side effects
+  const clonedDoc = JSON.parse(JSON.stringify(doc));
+
+  const resolvePath = (src) => {
+    if (!src || src.startsWith('/') || src.startsWith('http')) return src;
+    return `/works/${slug}/${src}`;
+  };
+
+  const walkNodes = (nodes) => {
+    if (!Array.isArray(nodes)) return;
+    for (const node of nodes) {
+      if (node.tag === 'img' && node.props?.src) {
+        node.props.src = resolvePath(node.props.src);
+      }
+      if (node.tag === 'video' && node.props?.src) {
+        node.props.src = resolvePath(node.props.src);
+      }
+      if (node.children) {
+        walkNodes(node.children);
+      }
+    }
+  };
+
+  walkNodes(clonedDoc.body.children);
+  return clonedDoc;
 };
 
 // Extracts src from raw <iframe> string, direct URL, or Figma share links
