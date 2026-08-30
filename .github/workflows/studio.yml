@@ -1,6 +1,9 @@
 
 name: studio-nuxt-build
 run-name: studio nuxt build
+env:
+    SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+    SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
 on:
   # Runs on pushes targeting the default branch
