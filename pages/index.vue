@@ -7,9 +7,8 @@
 
     <div class="font-mono text-base font-normal leading-6 mb-10">
       <p>
-        I'm a UI/UX Designer with 5 years of industry experience. Lorem ipsum dolor sit amet consectetur.
-        Amet justo et ut sed viverra in at. In amet lectus semper rhoncus. Duis pretium dui commodo
-        non eu et ac dolor proin. Blandit nunc id nascetur lacus dolor.
+        Welcome to my digital space. This is where I showcase my works and interests. 5 years of industry 
+        experience in sculpting digital products that transform people and business online. 
       </p>
     </div>
 

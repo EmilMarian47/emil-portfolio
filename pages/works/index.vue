@@ -1,9 +1,9 @@
 <template>
   <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-10">Works including Lorem ipsum dolor sit</h1>
+    <h1 class="font-mono text-base leading-8 mb-10">Projects include websites, desktop apps, mobile apps and my own paintings</h1>
 
     <ContentList path="/works" v-slot="{ list }">
-      <div class="grid grid-cols-1 md:grid-cols-1 gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <nuxt-link :to="work._path" v-for="work in list" :key="work._path" class="group flex gap-5">
           <!-- Thumbnail Container -->
           <div class="size-36 bg-[#D9D9D9] shrink-0 overflow-hidden flex items-center justify-center">
