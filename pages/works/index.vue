@@ -1,14 +1,32 @@
 <template>
   <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-10">Works including Lorem ipsum dolor sit</h1>
+    <h1 class="font-mono text-base leading-8 mb-10">
+      Projects include websites, desktop apps, mobile apps and my own paintings
+    </h1>
 
     <ContentList path="/works" v-slot="{ list }">
-      <div class="grid grid-cols-1 md:grid-cols-1 gap-5">
-        <nuxt-link :to="work._path" v-for="work in list" :key="work._path" class="group flex gap-5">
-          <!-- Thumbnail Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <nuxt-link 
+          v-for="work in list" 
+          :key="work._path" 
+          :to="work._path" 
+          class="group flex gap-5"
+        >
+          <!-- Thumbnail Container (Supports both Images & Videos) -->
           <div class="size-36 bg-[#D9D9D9] shrink-0 overflow-hidden flex items-center justify-center">
+            <!-- Video Thumbnail -->
+            <video 
+              v-if="isVideo(getThumbnail(work))" 
+              :src="getThumbnail(work)" 
+              autoplay 
+              loop 
+              muted 
+              playsinline 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+            />
+            <!-- Image Thumbnail -->
             <img 
-              v-if="getThumbnail(work)" 
+              v-else-if="getThumbnail(work)" 
               :src="getThumbnail(work)" 
               :alt="work.title" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
@@ -26,15 +44,26 @@
 </template>
 
 <script setup>
-// Helper function to extract and format thumbnail path from works folder
+// Check if path points to a video asset
+const isVideo = (path) => {
+  if (!path) return false;
+  return /\.(mp4|webm|ogg|mov)$/i.test(path);
+};
+
+// Helper function to extract and format thumbnail path from works/<slug>/ folder
 const getThumbnail = (work) => {
   const imgPath = work.thumbnail || work.cover || work.image;
   if (!imgPath) return null;
 
-  // If path already starts with / or http, return as-is; otherwise, point to /works/
+  // 1. If absolute URL or root-relative path, return directly
   if (imgPath.startsWith('/') || imgPath.startsWith('http')) {
     return imgPath;
   }
-  return `/works/${imgPath}`;
+
+  // 2. Extract project slug (e.g., "/works/marker" -> "marker")
+  const projectSlug = work._path ? work._path.split('/').pop() : '';
+
+  // 3. Construct subfolder path: /works/<projectSlug>/<filename>
+  return projectSlug ? `/works/${projectSlug}/${imgPath}` : `/works/${imgPath}`;
 };
 </script>
