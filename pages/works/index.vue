@@ -52,18 +52,6 @@ const isVideo = (path) => {
 
 // Helper function to extract and format thumbnail path from works/<slug>/ folder
 const getThumbnail = (work) => {
-  const imgPath = work.thumbnail || work.cover || work.image;
-  if (!imgPath) return null;
-
-  // 1. If absolute URL or root-relative path, return directly
-  if (imgPath.startsWith('/') || imgPath.startsWith('http')) {
-    return imgPath;
-  }
-
-  // 2. Extract project slug (e.g., "/works/marker" -> "marker")
-  const projectSlug = work._path ? work._path.split('/').pop() : '';
-
-  // 3. Construct subfolder path: /works/<projectSlug>/<filename>
-  return projectSlug ? `/works/${projectSlug}/${imgPath}` : `/works/${imgPath}`;
+  return work.thumbnail || work.cover || work.image || null;
 };
 </script>

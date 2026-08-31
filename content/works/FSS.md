@@ -2,7 +2,7 @@
 title: 'FSS'
 type: 'Banking'
 description: 'meta description of the page'
-thumbnail: "FSST.png"
+thumbnail: '/works/FSS/FSST.png'
 website: "https://fsstech.com"
 ---
 
