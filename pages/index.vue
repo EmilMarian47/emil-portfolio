@@ -1,6 +1,5 @@
 ```vue
 <template>
-<CRTEffect>
   <div class="container py-8">
     <!-- Introduction -->
     <h1 class="font-mono text-base font-normal leading-6 mb-6">
@@ -159,7 +158,6 @@
       </div>
     </section>
   </div>
-  </CRTEffect>
 </template>
 
 <script setup>

@@ -2,7 +2,7 @@
 title: 'Pegasus'
 type: 'Banking'
 description: 'meta description of the page'
-thumbnail: "PegasusT.png"
+thumbnail: '/works/Pegasus/PegasusT.png'
 ---
 
 <!-- Content of the page -->
