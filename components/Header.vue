@@ -18,10 +18,10 @@
       </nuxt-link>
 
       <nuxt-link to="/">
-        <h1 class="font-mono text-base">Emil Marian</h1>
+        <h1 class="font-mono text-base">EMIL MARIAN</h1>
       </nuxt-link> 
       <div class="ml-auto">
-        <a href="/resume.pdf" class="font-mono text-base text-base underline">Download Resume</a>
+        <a href="/resume.pdf" class="font-mono text-base text-base underline">DOWNLOAD RESUME</a>
       </div>
     </div>
     <div class="flex justify-between gap-2 py-2 border-y border-gray border-dashed">
@@ -32,7 +32,7 @@
           'text-secondary': $route.path === '/',
         }"
         to="/"
-        >About</nuxt-link
+        >ABOUT</nuxt-link
       >
       <nuxt-link
         class="font-mono font-medium underline"
@@ -41,7 +41,7 @@
           'text-secondary': $route.path.startsWith('/works'),
         }"
         to="/works"
-        >Works</nuxt-link
+        >WORKS</nuxt-link
       >
       <nuxt-link
         class="font-mono font-medium underline"
@@ -50,7 +50,7 @@
           'text-secondary': $route.path === '/contact',
         }"
         to="/contact"
-        >Contact</nuxt-link
+        >CONTACT</nuxt-link
       >
     </div>
   </div>

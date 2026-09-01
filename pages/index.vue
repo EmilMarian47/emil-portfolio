@@ -1,14 +1,16 @@
+```vue
 <template>
+<CRTEffect>
   <div class="container py-8">
     <!-- Introduction -->
     <h1 class="font-mono text-base font-normal leading-6 mb-6">
-      Howdy Partner! 👋
+      HOWDY PARTNER! 👋
     </h1>
 
     <div class="font-mono text-base font-normal leading-6 mb-10">
       <p>
-        Welcome to my digital space. This is where I showcase my works and interests. 5 years of industry 
-        experience in sculpting digital products that transform people and business online. 
+        WELCOME TO MY DIGITAL SPACE. THIS IS WHERE I SHOWCASE MY WORKS AND INTERESTS. 5 YEARS OF INDUSTRY 
+        EXPERIENCE IN SCULPTING DIGITAL PRODUCTS THAT TRANSFORM PEOPLE AND BUSINESS ONLINE. 
       </p>
     </div>
 
@@ -17,7 +19,7 @@
       <div>
         <div class="w-full pb-2 border-b border-gray border-dashed">
           <div class="text-fuchsia-500 text-base font-normal font-['Space_Mono'] leading-6">
-            Professional Experience
+            PROFESSIONAL EXPERIENCE
           </div>
         </div>
       </div>
@@ -65,7 +67,7 @@
       <div>
         <div class="w-full pb-2 border-b border-gray border-dashed">
           <div class="text-fuchsia-500 text-base font-normal font-['Space_Mono'] leading-6">
-            Education
+            EDUCATION
           </div>
         </div>
       </div>
@@ -109,7 +111,7 @@
       <div>
         <div class="w-full pb-2 border-b border-gray border-dashed">
           <div class="text-fuchsia-500 text-base font-normal font-['Space_Mono'] leading-6">
-            Certifications
+            CERTIFICATIONS
           </div>
         </div>
       </div>
@@ -139,7 +141,7 @@
       <div>
         <div class="w-full pb-2 border-b border-gray border-dashed">
           <div class="text-fuchsia-500 text-base font-normal font-['Space_Mono'] leading-6">
-            Skills
+            SKILLS
           </div>
         </div>
       </div>
@@ -157,81 +159,83 @@
       </div>
     </section>
   </div>
+  </CRTEffect>
 </template>
 
 <script setup>
 const experience = [
   {
-    role: 'UI Designer',
-    period: '2024 — Present',
-    company: 'Red Baton',
+    role: 'UI DESIGNER',
+    period: '2024 — PRESENT',
+    company: 'RED BATON',
     url: 'https://redbaton.digital/',
     description:
-      'UI designer for the core platform, owning end-to-end flows from research through hi-fi delivery. Ac dictum pulvinar faucibus vulputate mattis interdum nunc.',
+      'UI DESIGNER FOR THE CORE PLATFORM, OWNING END-TO-END FLOWS FROM RESEARCH THROUGH HI-FI DELIVERY. AC DICTUM PULVINAR FAUCIBUS VULPUTATE MATTIS INTERDUM NUNC.',
   },
   {
-    role: 'Visual Designer',
+    role: 'VISUAL DESIGNER',
     period: '2022 — 2024',
-    company: 'Rexav LLP',
+    company: 'REXAV LLP',
     url: 'https://rexavllp.com',
     description:
-      'Shipped a component library and design tokens adopted across four product teams. Orci mattis pellentesque laoreet in magna tristique.',
+      'SHIPPED A COMPONENT LIBRARY AND DESIGN TOKENS ADOPTED ACROSS FOUR PRODUCT TEAMS. ORCI MATTIS PELLENTESQUE LAOREET IN MAGNA TRISTIQUE.',
   },
   {
-    role: 'UI Designer',
+    role: 'UI DESIGNER',
     period: '2021 — 2022',
-    company: 'Studio Lore',
+    company: 'STUDIO LORE',
     url: 'https://studiolore.in',
     description:
-      'Designed responsive marketing sites and dashboards. Tincidunt leo nunc aliquam etiam sed viverra sed.',
+      'DESIGNED RESPONSIVE MARKETING SITES AND DASHBOARDS. TINCIDUNT LEO NUNC ALIQUAM ETIAM SED VIVERRA SED.',
   },
 ]
 
 const education = [
   {
-    degree: 'MSc, Computer Science',
+    degree: 'MSC, COMPUTER SCIENCE',
     period: '2018 — 2020',
-    institution: 'Mahatma Gandhi University, Kerala',
+    institution: 'MAHATMA GANDHI UNIVERSITY, KERALA',
     url: 'https://mgu.ac.in/',
   },
   {
-    degree: 'BSc, Computer Application',
+    degree: 'BSC, COMPUTER APPLICATION',
     period: '2015 — 2018',
-    institution: 'Sacred Heart College, Kerala',
+    institution: 'SACRED HEART COLLEGE, KERALA',
     url: 'https://shcollege.ac.in/',
   },
 ]
 
 const certifications = [
   {
-    name: 'Nielsen Norman UX Certification',
-    provider: 'NN/g',
+    name: 'NIELSEN NORMAN UX CERTIFICATION',
+    provider: 'NN/G',
     year: '2022',
   },
   {
-    name: 'Google UX Design Professional',
-    provider: 'Coursera',
+    name: 'GOOGLE UX DESIGN PROFESSIONAL',
+    provider: 'COURSERA',
     year: '2020',
   },
   {
-    name: 'Certified Accessibility Specialist',
+    name: 'CERTIFIED ACCESSIBILITY SPECIALIST',
     provider: 'IAAP',
     year: '2021',
   },
 ]
 
 const skills = [
-  'Product Design',
-  'Design Systems',
-  'User Research',
-  'Prototyping',
-  'Figma',
-  'Wireframing',
-  'Interaction Design',
+  'PRODUCT DESIGN',
+  'DESIGN SYSTEMS',
+  'USER RESEARCH',
+  'PROTOTYPING',
+  'FIGMA',
+  'WIREFRAMING',
+  'INTERACTION DESIGN',
   'HTML / CSS',
-  'Accessibility',
-  'Usability Testing',
-  'Motion Design',
-  'Design Tokens',
+  'ACCESSIBILITY',
+  'USABILITY TESTING',
+  'MOTION DESIGN',
+  'DESIGN TOKENS',
 ]
 </script>
+```

@@ -4,10 +4,10 @@
       <div class="flex items-center justify-center text-base font-mono border-t border-gray border-dashed pt-[10px] pb-8">
         <nuxt-link 
           class="underline" 
-          :class="{'text-tertiary': $route.path !== '/disclosures', 'text-secondary': $route.path === '/disclosures'}" 
+          :class="{'text-primary': $route.path !== '/disclosures', 'text-secondary': $route.path === '/disclosures'}" 
           to="/disclosures"
         >
-          Copyright © 2026-2028 Emil Marian.
+          COPYRIGHT © 2026-2028 EMIL MARIAN.
         </nuxt-link>
       </div>
     </div>

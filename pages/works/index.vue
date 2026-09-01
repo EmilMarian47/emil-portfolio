@@ -1,7 +1,7 @@
 <template>
   <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-10">
-      Projects include websites, desktop apps, mobile apps and my own paintings
+    <h1 class="font-mono text-primary text-base leading-8 mb-10">
+      PROJECTS INCLUDE WEBSITES, DESKTOP APPS, MOBILE APPS AND MY OWN PAINTINGS
     </h1>
 
     <ContentList path="/works" v-slot="{ list }">
@@ -35,7 +35,7 @@
 
           <div class="pt-5 flex gap-1 flex-col">
             <h5 class="font-mono text-black underline">{{ work.title }}</h5>
-            <p class="font-mono italic text-tertiary">{{ work.type }}</p>
+            <p class="font-mono italic text-primary">{{ work.type }}</p>
           </div>
         </nuxt-link>
       </div>

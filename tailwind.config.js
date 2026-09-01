@@ -3,13 +3,13 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'background': '#111111',
-      'primary': '#f5f5f5', // text
+      'background': '#1B1E17',
+      'primary': '#FFFFA7', // text
       'secondary': '#E414F7', // pink
       'tertiary': '#dddddd', // inactive
       'success': 'rgb(34 197 94)', // upvote
       'error': 'rgb(239 68 68)', // downvote
-      'gray': '#BCBCBC'// line
+      'gray': '#81916C'// line
     },
     fontFamily: {
       mono: ["Space Mono"],

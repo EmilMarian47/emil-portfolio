@@ -1,6 +1,6 @@
 <template>
   <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-6">Memes</h1>
+    <h1 class="font-mono text-base leading-8 mb-6">MEMES</h1>
 
     <div v-if="images?.length" class="grid grid-cols-2 gap-3 mb-10">
       <button
