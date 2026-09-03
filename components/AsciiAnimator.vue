@@ -100,10 +100,12 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Load local font exclusively from assets (update filename/path to match your assets folder structure) */
+/* Load local font directly from public folder for universal mobile/desktop compatibility */
 @font-face {
   font-family: 'DosFont';
-  src: url('@/assets/fonts/Perfect DOS VGA 437.ttf') format('ttf');
+  src: url('/fonts/Perfect%20DOS%20VGA%20437.ttf') format('truetype'),
+       url('/fonts/Perfect-DOS-VGA-437.ttf') format('truetype'),
+       url('/fonts/Perfect DOS VGA 437.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
