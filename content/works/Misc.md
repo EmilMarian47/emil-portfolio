@@ -2,7 +2,7 @@
 title: 'Random designs'
 type: 'Archive'
 description: 'meta description of the page'
-thumbnail: "/works/Misc/MiscT.png'
+thumbnail: '/works/Misc/MiscT.png'
 ---
 
 <!-- Content of the page -->

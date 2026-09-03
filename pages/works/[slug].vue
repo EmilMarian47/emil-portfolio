@@ -1,46 +1,43 @@
 <template>
   <div class="container py-8 flex-grow">
-    <!-- ContentQuery fetches document data cleanly without crashing on empty bodies -->
-    <ContentQuery :path="$route.path" find="one" v-slot="{ data: doc }">
-      <div v-if="doc" class="content">
+    <div v-if="doc" class="content">
 
-        <!-- Header -->
-        <div class="flex justify-between items-center mb-9">
-          <div class="flex gap-3 items-center">
-            <nuxt-link to="/works">
-              <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
-            </nuxt-link>
-            <h1 class="text-base font-dos">{{ doc.title }}</h1>
-          </div>
-
-          <!-- Go to website Hyperlink (Renders if website/url/link frontmatter exists) -->
-          <a
-            v-if="getWebsiteUrl(doc)"
-            :href="getWebsiteUrl(doc)"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-base font-dos text-primary underline underline-offset-2 flex items-center gap-1 hover:opacity-80 transition-opacity"
-          >
-            GO TO WEBSITE
-          </a>
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-9">
+        <div class="flex gap-3 items-center">
+          <nuxt-link to="/works">
+            <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
+          </nuxt-link>
+          <h1 class="text-base font-dos">{{ doc.title }}</h1>
         </div>
 
-        <!-- Full-Viewport iFrame (Shows if frontmatter iframe/figma/embed exists) -->
-        <div v-if="getIframeUrl(doc)" class="iframe-container mb-12">
-          <iframe
-            :src="getIframeUrl(doc)"
-            class="w-screen h-[90vh] max-w-none left-1/2 -ml-[50vw] relative border-0 bg-neutral-900 rounded-lg shadow-inner"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <!-- Markdown Article Body (With automatically transformed relative asset paths) -->
-        <article v-if="hasBodyContent(doc)">
-          <ContentRenderer :value="transformBodyAssets(doc)" />
-        </article>
+        <!-- Go to website Hyperlink (Renders if website/url/link frontmatter exists) -->
+        <a
+          v-if="getWebsiteUrl(doc)"
+          :href="getWebsiteUrl(doc)"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-base font-dos text-primary underline underline-offset-2 flex items-center gap-1 hover:opacity-80 transition-opacity"
+        >
+          GO TO WEBSITE
+        </a>
       </div>
-    </ContentQuery>
+
+      <!-- Full-Viewport iFrame (Shows if frontmatter iframe/figma/embed exists) -->
+      <div v-if="getIframeUrl(doc)" class="iframe-container mb-12">
+        <iframe
+          :src="getIframeUrl(doc)"
+          class="w-screen h-[90vh] max-w-none left-1/2 -ml-[50vw] relative border-0 bg-neutral-900 rounded-lg shadow-inner"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Markdown Article Body (With automatically transformed relative asset paths) -->
+      <article v-if="hasBodyContent(doc)">
+        <ContentRenderer :value="transformBodyAssets(doc)" />
+      </article>
+    </div>
   </div>
 </template>
 
@@ -64,6 +61,9 @@
 </style>
 
 <script setup>
+const route = useRoute();
+const { data: doc } = await useAsyncData(`work-doc-${route.path}`, () => queryContent(route.path).findOne());
+
 // Extract website URL from frontmatter
 const getWebsiteUrl = (doc) => {
   return doc?.website || doc?.url || doc?.link || doc?.site || null;
@@ -118,7 +118,7 @@ const transformBodyAssets = (doc) => {
 
 // Extracts src from raw <iframe> string, direct URL, or Figma share links
 const getIframeUrl = (doc) => {
-  const rawInput = doc.iframe || doc.figma || doc.figmaUrl || doc.embed;
+  const rawInput = doc?.iframe || doc?.figma || doc?.figmaUrl || doc?.embed;
   if (!rawInput) return null;
 
   // 1. If user pasted a full <iframe ... src="..."> code snippet
