@@ -8,7 +8,6 @@ const isWorkDetailPage = computed(() => {
 </script>
 
 <template>
-<CRTEffect>
   <div class="min-h-screen flex flex-col bg-background text-primary">
     <Header v-if="!isWorkDetailPage" />
 
@@ -18,5 +17,4 @@ const isWorkDetailPage = computed(() => {
 
     <Footer v-if="!isWorkDetailPage" />
   </div>
-  </CRTEffect>
 </template>

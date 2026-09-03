@@ -3,20 +3,25 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'background': '#1B1E17',
-      'primary': '#FFFFA7', // text
-      'secondary': '#E414F7', // pink
-      'tertiary': '#dddddd', // inactive
-      'success': 'rgb(34 197 94)', // upvote
-      'error': 'rgb(239 68 68)', // downvote
-      'gray': '#81916C'// line
+
+      background: '#111111',
+      primary: '#f5f5f5',
+      secondary: '#E414F7',
+      tertiary: '#dddddd',
+      success: 'rgb(34 197 94)',
+      error: 'rgb(239 68 68)',
+      gray: '#81916C',
     },
+
     fontFamily: {
-      mono: ["Space Mono"],
+      mono: ['"Space Mono"', 'monospace'],
+      dos: ['"Perfect DOS VGA 437"', 'monospace'],
     },
+
     container: {
       center: true,
       padding: '20px',
+
       screens: {
         sm: '600px',
         md: '740px',

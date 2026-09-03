@@ -10,7 +10,7 @@
             <nuxt-link to="/works">
               <img src="~/assets/icons/arrow-left.svg" class="size-6" alt="Back" />
             </nuxt-link>
-            <h1 class="text-base font-mono">{{ doc.title }}</h1>
+            <h1 class="text-base font-dos">{{ doc.title }}</h1>
           </div>
 
           <!-- Go to website Hyperlink (Renders if website/url/link frontmatter exists) -->
@@ -19,7 +19,7 @@
             :href="getWebsiteUrl(doc)"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-base font-mono text-primary underline underline-offset-2 flex items-center gap-1 hover:opacity-80 transition-opacity"
+            class="text-base font-dos text-primary underline underline-offset-2 flex items-center gap-1 hover:opacity-80 transition-opacity"
           >
             GO TO WEBSITE
           </a>
