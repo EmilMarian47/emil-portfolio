@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     appManifest: false
   },
 
+  css: ['~/assets/css/fonts.css'],
+
   runtimeConfig: {
     public: {
       supabaseUrl: process.env.SUPABASE_URL,

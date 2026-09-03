@@ -2,7 +2,7 @@
 title: 'Nomisma'
 type: 'Banking'
 description: 'meta description of the page'
-thumbnail: "NomismaT.png"
+thumbnail: '/works/Nomisma/NomismaT.png'
 ---
 
 <!-- Content of the page -->

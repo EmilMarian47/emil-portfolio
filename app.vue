@@ -1,18 +1,20 @@
+<script setup>
+const route = useRoute()
+
+// Returns true for sub-routes like /works/some-project, but false for /works
+const isWorkDetailPage = computed(() => {
+  return route.path.startsWith('/works/') && route.path !== '/works'
+})
+</script>
+
 <template>
-  <div class="min-h-screen flex flex-col">
-    <Header />
-    
-    <!-- main container expands to fill available height and push footer down -->
+  <div class="min-h-screen flex flex-col bg-background text-primary">
+    <Header v-if="!isWorkDetailPage" />
+
     <main class="flex-grow">
       <NuxtPage />
     </main>
 
-    <Footer />
+    <Footer v-if="!isWorkDetailPage" />
   </div>
 </template>
-
-<style>
-body {
-  @apply bg-background text-primary; 
-}
-</style>

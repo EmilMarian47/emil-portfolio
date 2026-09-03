@@ -1,45 +1,47 @@
 <template>
-  <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-10">
-      Projects include websites, desktop apps, mobile apps and my own paintings
-    </h1>
+  <div class="container py-2">
+    <section class="border border-gray-500/60 border-dashed px-4 py-5 mb-8">
+      <h1 class="font-dos text-primary text-base leading-8 mb-10">
+        PROJECTS INCLUDE WEBSITES, DESKTOP APPS, MOBILE APPS AND MY OWN PAINTINGS
+      </h1>
 
-    <ContentList path="/works" v-slot="{ list }">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <nuxt-link 
-          v-for="work in list" 
-          :key="work._path" 
-          :to="work._path" 
-          class="group flex gap-5"
-        >
-          <!-- Thumbnail Container (Supports both Images & Videos) -->
-          <div class="size-36 bg-[#D9D9D9] shrink-0 overflow-hidden flex items-center justify-center">
-            <!-- Video Thumbnail -->
-            <video 
-              v-if="isVideo(getThumbnail(work))" 
-              :src="getThumbnail(work)" 
-              autoplay 
-              loop 
-              muted 
-              playsinline 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-            />
-            <!-- Image Thumbnail -->
-            <img 
-              v-else-if="getThumbnail(work)" 
-              :src="getThumbnail(work)" 
-              :alt="work.title" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-            />
-          </div>
+      <ContentList path="/works" v-slot="{ list }">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <nuxt-link 
+            v-for="work in list" 
+            :key="work._path" 
+            :to="work._path" 
+            class="group flex gap-5"
+          >
+            <!-- Thumbnail Container (Supports both Images & Videos) -->
+            <div class="size-36 bg-[#D9D9D9] shrink-0 overflow-hidden flex items-center justify-center">
+              <!-- Video Thumbnail -->
+              <video 
+                v-if="isVideo(getThumbnail(work))" 
+                :src="getThumbnail(work)" 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+              />
+              <!-- Image Thumbnail -->
+              <img 
+                v-else-if="getThumbnail(work)" 
+                :src="getThumbnail(work)" 
+                :alt="work.title" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+              />
+            </div>
 
-          <div class="pt-5 flex gap-1 flex-col">
-            <h5 class="font-mono text-black underline">{{ work.title }}</h5>
-            <p class="font-mono italic text-tertiary">{{ work.type }}</p>
-          </div>
-        </nuxt-link>
-      </div>
-    </ContentList>
+            <div class="pt-5 flex gap-1 flex-col">
+              <h5 class="font-dos text-primary underline">{{ work.title }}</h5>
+              <p class="font-dos text-tertiary">{{ work.type }}</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </ContentList>
+    </section>
   </div>
 </template>
 
@@ -52,18 +54,6 @@ const isVideo = (path) => {
 
 // Helper function to extract and format thumbnail path from works/<slug>/ folder
 const getThumbnail = (work) => {
-  const imgPath = work.thumbnail || work.cover || work.image;
-  if (!imgPath) return null;
-
-  // 1. If absolute URL or root-relative path, return directly
-  if (imgPath.startsWith('/') || imgPath.startsWith('http')) {
-    return imgPath;
-  }
-
-  // 2. Extract project slug (e.g., "/works/marker" -> "marker")
-  const projectSlug = work._path ? work._path.split('/').pop() : '';
-
-  // 3. Construct subfolder path: /works/<projectSlug>/<filename>
-  return projectSlug ? `/works/${projectSlug}/${imgPath}` : `/works/${imgPath}`;
+  return work.thumbnail || work.cover || work.image || null;
 };
 </script>

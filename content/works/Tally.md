@@ -2,7 +2,7 @@
 title: Tally
 type: Finance
 description: meta description of the page
-thumbnail: "TallyT.png"
+thumbnail: '/works/Tally/TallyT.png'
 website: "http://tallysolutions.com/"
 ---
 

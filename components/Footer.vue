@@ -1,14 +1,18 @@
-<template> 
+<template>
   <footer class="w-full mt-auto">
     <div class="container">
-      <div class="flex items-center justify-center text-base font-mono border-t border-gray border-dashed pt-[10px] pb-8">
-        <nuxt-link 
-          class="underline" 
-          :class="{'text-tertiary': $route.path !== '/disclosures', 'text-secondary': $route.path === '/disclosures'}" 
-          to="/disclosures"
-        >
-          Copyright © 2026-2028 Emil Marian.
-        </nuxt-link>
+      <div
+        class="border border-gray-500/60 border-dashed
+               px-4 py-5 mb-8
+               flex items-center justify-between"
+      >
+        <span class="font-dos text-xs leading-5">
+          COPYRIGHT 2026
+        </span>
+
+        <span class="font-dos text-xs leading-5">
+          ALL RIGHTS RESERVED
+        </span>
       </div>
     </div>
   </footer>

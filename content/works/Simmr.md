@@ -2,7 +2,7 @@
 title: Simmr
 type: Cooking
 description: meta description of the page
-thumbnail: "SimmrT.png"
+thumbnail: '/works/Simmr/SimmrT.png'
 website: "https://getsimmr.com/"
 ---
 

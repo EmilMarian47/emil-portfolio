@@ -2,7 +2,7 @@
 title: 'Greens International'
 type: 'E-commerce'
 description: 'meta description of the page'
-thumbnail: "GreensT.png"
+thumbnail: '/works/Greens/GreensT.png'
 website: "https://greensintl.com/"
 ---
 

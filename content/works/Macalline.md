@@ -2,7 +2,7 @@
 title: 'Macalline'
 type: 'Electrical'
 description: 'meta description of the page'
-thumbnail: "MacallineT.png"
+thumbnail: '/works/Macalline/MacallineT.png'
 ---
 
 <!-- Content of the page -->
