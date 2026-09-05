@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-const { data: list } = await useAsyncData('works-list', () => queryContent('/works').find())
+const { data: list } = await useAsyncData('works-list', () => queryContent('works').find())
 const worksList = computed(() => (list.value || []).filter(w => w?.title))
 
 // Check if path points to a video asset

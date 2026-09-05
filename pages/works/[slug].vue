@@ -62,7 +62,10 @@
 
 <script setup>
 const route = useRoute();
-const { data: doc } = await useAsyncData(`work-doc-${route.path}`, () => queryContent(route.path).findOne());
+const slug = computed(() => (route.params.slug ? String(route.params.slug).toLowerCase() : ''));
+const { data: doc } = await useAsyncData(`work-doc-${slug.value}`, () => {
+  return queryContent('works', slug.value).findOne();
+});
 
 // Extract website URL from frontmatter
 const getWebsiteUrl = (doc) => {
@@ -83,15 +86,15 @@ const hasBodyContent = (doc) => {
 const transformBodyAssets = (doc) => {
   if (!doc?.body) return doc;
   
-  const slug = getProjectSlug(doc);
-  if (!slug) return doc;
+  const slugVal = getProjectSlug(doc) || slug.value;
+  if (!slugVal) return doc;
 
   // Clone document object to prevent unintended side effects
   const clonedDoc = JSON.parse(JSON.stringify(doc));
 
   const resolvePath = (src) => {
     if (!src || src.startsWith('/') || src.startsWith('http')) return src;
-    return `/works/${slug}/${src}`;
+    return `/works/${slugVal}/${src}`;
   };
 
   const walkNodes = (nodes) => {
