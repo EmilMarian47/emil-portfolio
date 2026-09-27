@@ -1,9 +1,9 @@
 <template>
-  <div class="container pt-12">
+  <div class="container pt-6 md:pt-12">
     
     <header
       class="w-full bg-tertiary text-background
-             px-3 py-2 flex items-center mb-6"
+             px-3 py-2 flex items-center mb-4 md:mb-6"
     >
       <nuxt-link to="/" class="relative w-10 h-10 shrink-0">
         <img
@@ -31,7 +31,7 @@
 
       <div class="ml-auto">
         <a
-          href="/resume.pdf"
+          href="/EmilResume2027.pdf"
           download
           class="font-dos text-sm leading-5 underline"
         >
@@ -41,7 +41,7 @@
     </header>
 
 
-    <section class="border border-gray-500/60 border-dashed px-4 py-5 mb-6">
+    <section class="border border-gray-500/60 border-dashed px-4 py-3 md:py-5 mb-4 md:mb-6">
       <nav class="w-full">
         <div class="flex items-center justify-between">
 

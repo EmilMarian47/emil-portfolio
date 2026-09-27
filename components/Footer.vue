@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="border border-gray-500/60 border-dashed
-               px-4 py-5 mb-6
+               px-4 py-3 md:py-5 mb-6
                flex items-center justify-between"
       >
         <span class="font-dos text-xs leading-5">
