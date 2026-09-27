@@ -2,9 +2,7 @@
   <div class="container">
     <!-- ABOUT -->
     <section ref="aboutRef" class="border border-gray-500/60 border-dashed px-4 py-3 mb-6">
-      <h1 class="font-dos text-lg leading-6 mb-2">
-        ABOUT
-      </h1>
+      
 
       <p class="font-dos text-sm leading-6">
         I'M A UI/UX DESIGNER BASED IN KERALA WITH 4.5 YEARS OF INDUSTRY EXPERIENCE, CREATING INTUITIVE AND ENGAGING DIGITAL EXPERIENCES ACROSS A RANGE OF INDUSTRIES. 

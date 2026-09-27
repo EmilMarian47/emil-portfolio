@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <section class="border border-gray-500/60 border-dashed px-4 py-3 md:py-5 mb-4 md:mb-6">
-      <h1 class="font-dos text-base leading-tight md:leading-8 mb-4 md:mb-6">
-        CONTACT ME FOR COLLABORATIONS AND FOR A CHAT
-      </h1>
+      
 
       <div class="flex flex-col gap-3 md:gap-6">
         <div class="flex flex-col gap-0.5 md:gap-1">
