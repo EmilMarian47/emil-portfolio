@@ -1,6 +1,7 @@
 <template>
-  <div class="container py-8">
-    <h1 class="font-mono text-base leading-8 mb-6">MEMES</h1>
+  <div class="container">
+    <section class="border border-gray-500/60 border-dashed px-4 py-5 mb-6">
+      <h1 class="font-mono text-base leading-8 mb-6">MEMES</h1>
 
     <div v-if="images?.length" class="grid grid-cols-2 gap-3 mb-10">
       <button
@@ -21,6 +22,7 @@
     <p v-else class="mb-10">
       Add images to the server/assets/memes folder to see them here.
     </p>
+    </section>
 
     <Teleport to="body">
       <div

@@ -1,6 +1,6 @@
 <template>
-  <div class="container py-2">
-    <section class="border border-gray-500/60 border-dashed px-4 py-5 mb-8">
+  <div class="container">
+    <section class="border border-gray-500/60 border-dashed px-4 py-5 mb-6">
       <h1 class="font-dos text-primary text-base leading-8 mb-10">
         PROJECTS INCLUDE WEBSITES, DESKTOP APPS, MOBILE APPS AND MY OWN PAINTINGS
       </h1>

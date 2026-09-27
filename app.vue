@@ -11,7 +11,7 @@ const isWorkDetailPage = computed(() => {
   <div class="min-h-screen flex flex-col bg-background text-primary">
     <Header v-if="!isWorkDetailPage" />
 
-    <main class="flex-grow">
+    <main class="flex-grow flex flex-col min-h-0">
       <NuxtPage />
     </main>
 
