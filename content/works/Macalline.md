@@ -1,6 +1,6 @@
 ---
 title: 'Macalline'
-type: 'Electrical'
+<!-- type: 'Electrical'-->
 description: 'meta description of the page'
 thumbnail: '/works/Macalline/MacallineT.png'
 ---

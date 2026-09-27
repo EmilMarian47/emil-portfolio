@@ -1,6 +1,6 @@
 ---
-title: 'FSS'
-type: 'Banking'
+title: 'FSS Technologies'
+<!-- type: 'Banking' -->
 description: 'meta description of the page'
 thumbnail: '/works/FSS/FSST.png'
 website: "https://fsstech.com"

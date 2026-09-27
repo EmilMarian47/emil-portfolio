@@ -1,6 +1,6 @@
 ---
 title: 'Pegasus'
-type: 'Banking'
+<!-- type: 'Banking' -->
 description: 'meta description of the page'
 thumbnail: '/works/Pegasus/PegasusT.png'
 ---

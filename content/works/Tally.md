@@ -1,6 +1,6 @@
 ---
 title: Tally
-type: Finance
+<!-- type: Finance -->
 description: meta description of the page
 thumbnail: '/works/Tally/TallyT.png'
 website: "http://tallysolutions.com/"

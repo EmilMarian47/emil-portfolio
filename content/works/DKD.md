@@ -1,6 +1,6 @@
 ---
 title: 'DKD Consulting'
-type: 'Defense'
+<!-- type: 'Defense' -->
 description: 'meta description of the page'
 thumbnail: '/works/DKD/DKDT.png'
 website: "https://getsimmr.com/"

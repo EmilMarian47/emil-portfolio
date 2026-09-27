@@ -1,6 +1,6 @@
 ---
 title: 'Nomisma'
-type: 'Banking'
+<!-- type: 'Banking' -->
 description: 'meta description of the page'
 thumbnail: '/works/Nomisma/NomismaT.png'
 ---

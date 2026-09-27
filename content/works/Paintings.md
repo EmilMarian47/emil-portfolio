@@ -1,6 +1,6 @@
 ---
 title: Paintings
-type: Hobby
+<!-- type: Hobby -->
 description: meta description of the page
 thumbnail: '/works/Paintings/PaintingsT.jpg'
 ---

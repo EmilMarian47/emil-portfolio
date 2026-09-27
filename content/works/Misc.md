@@ -1,6 +1,6 @@
 ---
-title: 'Random designs'
-type: 'Archive'
+title: 'More Random Designs'
+<!-- type: 'Archive'-->
 description: 'meta description of the page'
 thumbnail: '/works/Misc/MiscT.png'
 ---
@@ -10,3 +10,4 @@ thumbnail: '/works/Misc/MiscT.png'
 ![1](/works/Misc/Misc1.png)
 ![1](/works/Misc/Misc3.png)
 ![1](/works/Misc/Misc4.png)
+![1](/works/Misc/Misc5.webp)

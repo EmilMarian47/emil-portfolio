@@ -1,6 +1,6 @@
 ---
 title: ECG Monitor App
-type: Health & Lifestyle
+<!-- type: Health & Lifestyle -->
 description: meta description of the page
 thumbnail: '/works/ECG/ET.png'
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Greens International'
-type: 'E-commerce'
+<!-- type: 'E-commerce' -->
 description: 'meta description of the page'
 thumbnail: '/works/Greens/GreensT.png'
 website: "https://greensintl.com/"

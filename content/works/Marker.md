@@ -1,6 +1,6 @@
 ---
 title: 'Marker'
-type: 'Productivity'
+<!-- type: 'Productivity' -->
 description: 'meta description of the page'
 thumbnail: '/works/Marker/MarkerT.png'
 
