@@ -23,7 +23,7 @@ const heightStyle = computed(() => props.height || '260px')
 }
 
 .scanlines {
-  background: url('/Dotted.jpg') center no-repeat;
+  background: url('/pins.jpeg') center no-repeat;
   background-size: cover;
   width: 100%;
   position: relative;
