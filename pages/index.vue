@@ -12,7 +12,7 @@
       </p>
     </section>
 
-    <div class="mb-6 w-full">
+    <div class="mb-6 w-full border border-gray-500/60 border-dashed">
       <Scanlines :height="scanlinesHeight" />
     </div>
   </div>
