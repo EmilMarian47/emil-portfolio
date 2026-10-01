@@ -23,7 +23,7 @@ const heightStyle = computed(() => props.height || '260px')
 }
 
 .scanlines {
-  background: url('/Adam.png') center no-repeat;
+  background: url('/AdamBlue.png') center no-repeat;
   background-size: cover;
   width: 100%;
   position: relative;

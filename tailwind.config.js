@@ -4,7 +4,7 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
 
-      background: '#111111',
+      background: '#0000AA',
       primary: '#f5f5f5',
       secondary: '#E414F7',
       tertiary: '#dddddd',
