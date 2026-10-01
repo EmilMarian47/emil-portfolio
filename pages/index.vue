@@ -13,7 +13,7 @@
 
     <!-- GALLERY WITH CRT / MOIRE EFFECT -->
     <section class="border border-gray-500/60 border-dashed px-4 py-4 mb-6">
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
         <div 
           v-for="(image, index) in galleryImages" 
           :key="index" 
